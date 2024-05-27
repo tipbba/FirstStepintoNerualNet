@@ -49,11 +49,7 @@ $$
 又因为我们是沿着最陡峭的方向进行下降，从而权重矩阵的更新可以表示为：
 
 $$
-W_{new} = W_{old}
-- 
-lr 
-\cdot
- \frac{\partial }{\partial w_{ij}}\sum_n(t_n - o_n)^2
+W_{new} = W_{old} - lr \cdot \frac{\partial }{\partial w_{ij}}\sum_n(t_n - o_n)^2
 $$
 
 其中 $lr$ 表示学习率，也就是下山时每步要迈多大。将二者结合一下，得到：
